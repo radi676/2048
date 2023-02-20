@@ -1,0 +1,21 @@
+﻿  GameLogic.cpp
+C:\Users\Huawei\OneDrive\Работен плот\УП-проект\2048-main (1)\2048-main\2048\Helpers.h(5,62): error C2065: 'MAX_PLAYERS_LEADERBOARD': undeclared identifier
+C:\Users\Huawei\OneDrive\Работен плот\УП-проект\2048-main (1)\2048-main\2048\Helpers.h(5,91): error C2065: 'BUFFER_SIZE': undeclared identifier
+C:\Users\Huawei\OneDrive\Работен плот\УП-проект\2048-main (1)\2048-main\2048\GameLogic.cpp(62,3): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Huawei\OneDrive\Работен плот\УП-проект\2048-main (1)\2048-main\2048\GameLogic.cpp(85,3): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Huawei\OneDrive\Работен плот\УП-проект\2048-main (1)\2048-main\2048\GameLogic.cpp(163,3): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Huawei\OneDrive\Работен плот\УП-проект\2048-main (1)\2048-main\2048\GameLogic.cpp(180,3): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Huawei\OneDrive\Работен плот\УП-проект\2048-main (1)\2048-main\2048\GameLogic.cpp(197,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Helpers.cpp
+C:\Users\Huawei\OneDrive\Работен плот\УП-проект\2048-main (1)\2048-main\2048\Helpers.h(5,62): error C2065: 'MAX_PLAYERS_LEADERBOARD': undeclared identifier
+C:\Users\Huawei\OneDrive\Работен плот\УП-проект\2048-main (1)\2048-main\2048\Helpers.h(5,91): error C2065: 'BUFFER_SIZE': undeclared identifier
+C:\Users\Huawei\OneDrive\Работен плот\УП-проект\2048-main (1)\2048-main\2048\Helpers.cpp(150,36): warning C4267: '=': conversion from 'size_t' to 'char', possible loss of data
+C:\Users\Huawei\OneDrive\Работен плот\УП-проект\2048-main (1)\2048-main\2048\Helpers.cpp(154,41): warning C4267: '=': conversion from 'size_t' to 'char', possible loss of data
+  Leaderboard.cpp
+C:\Users\Huawei\OneDrive\Работен плот\УП-проект\2048-main (1)\2048-main\2048\Helpers.h(5,62): error C2065: 'MAX_PLAYERS_LEADERBOARD': undeclared identifier
+C:\Users\Huawei\OneDrive\Работен плот\УП-проект\2048-main (1)\2048-main\2048\Helpers.h(5,91): error C2065: 'BUFFER_SIZE': undeclared identifier
+C:\Users\Huawei\OneDrive\Работен плот\УП-проект\2048-main (1)\2048-main\2048\Helpers.cpp(150,36): warning C4267: '=': conversion from 'size_t' to 'char', possible loss of data
+C:\Users\Huawei\OneDrive\Работен плот\УП-проект\2048-main (1)\2048-main\2048\Helpers.cpp(154,41): warning C4267: '=': conversion from 'size_t' to 'char', possible loss of data
+  StringUtils.cpp
+C:\Users\Huawei\OneDrive\Работен плот\УП-проект\2048-main (1)\2048-main\2048\StringUtils.cpp(47,15): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
