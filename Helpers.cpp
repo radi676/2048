@@ -1,10 +1,25 @@
+/**
+*
+* Solution to course project #4
+* Introduction to programming course
+* Faculty of Mathematics and Informatics of Sofia University
+* Winter semester 2022/2023
+*
+* @author Radina Ovcharova
+* @idnumber 3MI0600151
+* @compiler VC
+*
+* Matrix and output helper functions
+*
+*/
+
 #include "Helpers.h"
 #include "StringUtils.h"
 #include <iostream>
 #include "ConstValues.h"
-#include "Leaderboard.h"
+#include <cstddef>
 
-void swapInteger(size_t& first, size_t& second) {
+void swap(size_t& first, size_t& second) {
 	size_t temp = first;
 	first = second;
 	second = temp;
@@ -18,30 +33,9 @@ void swap(char first[], char second[]) {
 	delete[] temp;
 }
 
-void selectionSort(size_t count, size_t scores[], char names[MAX_PLAYERS_LEADERBOARD + 1][BUFFER_SIZE])
-{
-	for (size_t i = 0; i < count - 1; i++)
-	{
-		size_t maxInd = i;
-		for (size_t j = i + 1; j < count; j++)
-		{
-			if (scores[j] > scores[maxInd])
-			{
-				maxInd = j;
-			}
-		}
-
-		if (maxInd != i)
-		{
-			swapInteger(scores[i], scores[maxInd]);
-			swap(names[i], names[maxInd]);
-		}
-	}
-}
-
 size_t** initializeMatrix(size_t n)
 {
-	size_t** m = new size_t * [n] {};
+	size_t** m = new size_t * [n];
 	for (size_t i = 0; i < n; i++)
 	{
 		m[i] = new size_t[n];
@@ -95,13 +89,18 @@ size_t sumMatrix(size_t** m, size_t n)
 	return sum;
 }
 
-size_t getNumLen(size_t n)
-{
-	if (n == 0)
-	{
+size_t getNumLen(size_t n) {
+	if (n == 0) {
 		return 1;
 	}
-	return 1 + getNumLen(n / 10);
+
+	size_t len = 0;
+	while (n > 0) {
+		n /= 10;
+		len++;
+	}
+
+	return len;
 }
 
 size_t getMaxElement(size_t** m, size_t n)
@@ -134,7 +133,7 @@ void setw(size_t x, size_t positions)
 
 void printMatrix(size_t** m, size_t n)
 {
-	size_t positions = getNumLen(getMaxElement(m, n)) + 1;//колкото е най-голямото число плюс едно за спесйче-толкова клетки да освободим
+	size_t positions = getNumLen(getMaxElement(m, n)) + 1;
 	for (size_t i = 0; i < n; i++)
 	{
 		for (size_t j = 0; j < n; j++)

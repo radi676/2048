@@ -14,6 +14,7 @@
 */
 
 #pragma once
+#include <cstddef>
 
 void strCpy(char* dest, char* source);
 char* inputStr();

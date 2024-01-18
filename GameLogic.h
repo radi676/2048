@@ -14,6 +14,7 @@
 */
 
 #pragma once
+#include <cstddef>
 
 void printMenu();
 bool isValidDirection(const char* input);

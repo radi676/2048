@@ -1,6 +1,22 @@
+/**
+*
+* Solution to course project #4
+* Introduction to programming course
+* Faculty of Mathematics and Informatics of Sofia University
+* Winter semester 2022/2023
+*
+* @author Radina Ovcharova
+* @idnumber 3MI0600151
+* @compiler VC
+*
+* Helper functions for strings
+*
+*/
+
 #include "StringUtils.h"
 #include <iostream>
 #include "ConstValues.h"
+#include <cstddef>
 
 void strCpy(char* dest, char* source)
 {
